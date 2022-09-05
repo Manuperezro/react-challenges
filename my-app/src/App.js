@@ -1,13 +1,15 @@
 import css from './App.module.css';
 import Sidebar from './components/Sidebar';
-import NavBarSimple from './components/NavBarSimple';
+// import NavBarSimple from './components/NavBarSimple';
+import NavBarForm from './components/NavBarForm';
 
 function App() {
   return (
     <div className={css.App}>
       {/* <Sidebar link1="My Photos"  link2="My Ilustrations" link3="My Paintings"  /> */}
       <Sidebar />
-      <NavBarSimple />
+      {/* <NavBarSimple /> */}
+      <NavBarForm />
     </div>
   );
 }

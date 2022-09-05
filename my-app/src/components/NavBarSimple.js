@@ -15,10 +15,13 @@ class NavBarSimple extends React.Component {
         this.setState((prevState, prevProps) => {
             console.log("Previous State Handle:", prevState);
             console.log("Previous Props handle:", prevProps);
+            console.log(this.state.message)
             return {
                 buttonText: prevState.buttonText === "Login" ? "Log out" : "Login",
-                message: prevState.message ===  "Welcome Back User!" ? "Hello, guest!" : "Welcome Back User!",
+                message: prevState.message ===  "Welcome Back User!" ? "Hello, guest!" : "Welcome Back User!",    
             }
+            
+            
         })
     }
 
@@ -26,7 +29,7 @@ class NavBarSimple extends React.Component {
         return (
             <div>
                 <h1>
-                    {this.state.Title}
+                {this.state.Title}
                 </h1>
                 <span>
                 {this.state.message}
