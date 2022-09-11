@@ -11,6 +11,7 @@ class NavBarForm extends Component {
             isLoggedIn: true,
         }
     }
+    
     handleButtonClick = () => {
         this.setState((prevState) => ({
             isLoggedIn: prevState.isLoggedIn ? false: true
